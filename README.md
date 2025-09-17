@@ -35,7 +35,7 @@ TemMed-Bench features three primary highlights.
 
 - Given the limited performance of current LVLMs in tracking condition changes under the zero-shot setting, we adopt the Retrieval-Augmented Generation (RAG) framework for evaluation. In addition to augmenting the input with retrieved textual information, we further explore augmenting the input with both retrieved visual and textual modalities in the medical domain. 
 
-  - Experimental results demonstrate that augmenting input with both visual and textual information substantially boosts performance for most models compared to text-only augmentation. Notably, HealthGPT exhibits an accuracy improvement of over 10% in the VQA task when augmented with multi-modal retrieved information. These results confirm that multi-modal retrieval augmentation provides more relevant medical information by retrieving images with similar conditions, highlighting its potential for input augmentation in the medical domain.
+  - Experimental results demonstrate that augmenting input with both visual and textual information substantially boosts performance for most models compared to text-only augmentation. Notably, HealthGPT exhibits an accuracy improvement of over 10% in the VQA task when augmented with multi-modal retrieved information.
 
 
 
