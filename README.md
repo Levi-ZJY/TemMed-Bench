@@ -13,12 +13,21 @@
 
 ## Intro
 
-TemMed-Bench features three primary highlights. (1) **Temporal reasoning focus**: each sample in TemMed-Bench includes historical condition information, challenging models to analyze changes in patient conditions over time. (2) **Multi-image input**: each sample in TemMed-Bench contains multiple images from different visits as input, emphasizing the need for models to process and reason over multiple images. (3) **Diverse task suite**: TemMed-Bench comprises three tasks including VQA, report generation, and image-pair selection. These tasks are all built upon a test set consisting of 1,000 samples. Additionally, TemMed-Bench includes a knowledge corpus with over 17,000 instances.
-
 <img src="./misc/Teaser_Figure.png" width="1000" />
+
+TemMed-Bench features three primary highlights. 
+- (1) **Temporal reasoning focus**: each sample in TemMed-Bench includes historical condition information, challenging models to analyze changes in patient conditions over time. 
+- (2) **Multi-image input**: each sample in TemMed-Bench contains multiple images from different visits as input, emphasizing the need for models to process and reason over multiple images. 
+- (3) **Diverse task suite**: TemMed-Bench comprises three tasks including VQA, report generation, and image-pair selection. These tasks are all built upon a test set consisting of 1,000 samples. Additionally, TemMed-Bench includes a knowledge corpus with over 17,000 instances.
+
+
 
 
 ## Results
+
+
+<img src="./misc/Task_Figure.png" width="800" />
+
 
 - We conducted extensive experiments on TemMed-Bench to evaluate six proprietary and six open-source LVLMs. The results show that most LVLMs lack the ability to analyze changes in patients’ conditions across temporal medical images. 
 
@@ -28,7 +37,6 @@ TemMed-Bench features three primary highlights. (1) **Temporal reasoning focus**
 
   - Experimental results demonstrate that augmenting input with both visual and textual information substantially boosts performance for most models compared to text-only augmentation. Notably, HealthGPT exhibits an accuracy improvement of over 10% in the VQA task when augmented with multi-modal retrieved information. These results confirm that multi-modal retrieval augmentation provides more relevant medical information by retrieving images with similar conditions, highlighting its potential for input augmentation in the medical domain.
 
-<img src="./misc/Task_Figure.png" width="800" />
 
 
 ## Load Dataset
