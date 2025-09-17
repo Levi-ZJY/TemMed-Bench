@@ -8,7 +8,7 @@
 ## News
 
 
-* 🔥 [2024-10-10] MRAG-Bench is released.
+* 🔥 [2025-x-x] MRAG-Bench is released.
 
 
 ## Intro
