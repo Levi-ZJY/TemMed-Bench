@@ -36,20 +36,19 @@ TemMed-Bench features three primary highlights.
 
 
 
-
+<!-- 
 ## Results
 
 <img src="./misc/Results.png" width="500" />
 
-<!-- - We conducted extensive experiments on TemMed-Bench to evaluate six proprietary and six open-source LVLMs. The results show that most LVLMs lack the ability to analyze changes in patients’ conditions across temporal medical images. 
+- We conducted extensive experiments on TemMed-Bench to evaluate six proprietary and six open-source LVLMs. The results show that most LVLMs lack the ability to analyze changes in patients’ conditions across temporal medical images. 
 
   - In the VQA task, GPT-4o-mini and Claude 3.5 Sonnet achieved accuracies of 79.15% and 69.90%, respectively, while most LVLMs scored below 60\%. For the more challenging tasks of report generation and image-pair selection, all LVLMs underperformed, with the highest average BLEU, ROUGE-L, and METEOR score at 20.67 for report generation and a top accuracy of 39.33% for image-pair selection in a three-option setting. These results reveal a fundamental gap in current LVLM training, i.e., lack of focus on temporal image reasoning.
 
 - Given the limited performance of current LVLMs in tracking condition changes under the zero-shot setting, we adopt the Retrieval-Augmented Generation (RAG) framework for evaluation. In addition to augmenting the input with retrieved textual information, we further explore augmenting the input with both retrieved visual and textual modalities in the medical domain. 
 
-  - Experimental results demonstrate that augmenting input with both visual and textual information substantially boosts performance for most models compared to text-only augmentation. Notably, HealthGPT exhibits an accuracy improvement of over 10% in the VQA task when augmented with multi-modal retrieved information. These results confirm that multi-modal retrieval augmentation provides more relevant medical information by retrieving images with similar conditions, highlighting its potential for input augmentation in the medical domain. -->
-
-
+  - Experimental results demonstrate that augmenting input with both visual and textual information substantially boosts performance for most models compared to text-only augmentation. Notably, HealthGPT exhibits an accuracy improvement of over 10% in the VQA task when augmented with multi-modal retrieved information. These results confirm that multi-modal retrieval augmentation provides more relevant medical information by retrieving images with similar conditions, highlighting its potential for input augmentation in the medical domain.
+ -->
 
 ## Load Dataset
 
