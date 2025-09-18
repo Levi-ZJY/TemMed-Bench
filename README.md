@@ -52,7 +52,10 @@ TemMed-Bench features three primary highlights.
 
 ## Load Dataset
 
+- Note that due to the CheXpert Plus dataset’s license, we can only release the corresponding data index in our benchmark files. The source data files should be downloaded directly from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1)
+
 - Coming Soon
+
 
 ## Evaluation 
 
