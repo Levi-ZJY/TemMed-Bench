@@ -5,10 +5,6 @@
 
 
 
-## News
-
-
-* 🔥 [2025-x-x] MRAG-Bench is released.
 
 
 ## Intro
