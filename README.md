@@ -1,7 +1,7 @@
 
 # TemMed-Bench: Evaluating Temporal Medical Image Reasoning in Vision-Language Models
 
-[**🌐 Homepage**]() | [**🤗 Dataset**](https://huggingface.co/datasets/uclanlp/TemMed-Bench) | [**📖 Paper**]()
+[**🌐 Homepage**](https://temmedbench.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/uclanlp/TemMed-Bench) | [**📖 Paper**](https://arxiv.org/abs/2509.25143)
 
 
 
@@ -12,9 +12,9 @@
 <img src="./misc/Teaser_Figure.png" width="750" />
 
 TemMed-Bench features three primary highlights. 
-- **Temporal reasoning focus**: each sample in TemMed-Bench includes historical condition information, challenging models to analyze changes in patient conditions over time. 
-- **Multi-image input**: each sample in TemMed-Bench contains multiple images from different visits as input, emphasizing the need for models to process and reason over multiple images. 
-- **Diverse task suite**: TemMed-Bench comprises three tasks including VQA, report generation, and image-pair selection. These tasks are all built upon a test set consisting of 1,000 samples. Additionally, TemMed-Bench includes a knowledge corpus with over 17,000 instances.
+- **Temporal reasoning focus:** Each sample in TemMed-Bench includes historical condition information, which challenges models to analyze changes in patient conditions over time.
+- **Multi-image input:** Each sample in TemMed-Bench contains multiple images from different visits as input, emphasizing the need for models to process and reason over multiple images.
+- **Diverse task suite:** TemMed-Bench comprises three tasks, including VQA, report generation, and image-pair selection. Additionally, TemMed-Bench includes a knowledge corpus with more than 17,000 instances to support retrieval-augmented generation (RAG).
 
 
 
