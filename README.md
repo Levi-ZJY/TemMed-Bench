@@ -51,10 +51,58 @@ TemMed-Bench features three primary highlights.
 
 ## Load Dataset
 
-- Note that due to the CheXpert Plus dataset’s license, we can only release the corresponding data index in our benchmark files. The source data files should be downloaded directly from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1)
+### Step 1:
 
-- Coming Soon
+- Download the source data files from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1) (Due to the dataset's license agreement, the images and reports from the CheXpert Plus dataset cannot be redistributed.)
 
+- Save the files to the following path:
+
+  ```
+  TemMed-Bench/
+  ├── PNG/
+  └── df_chexpert_plus_240401.csv
+  ```
+
+<!-- Due to the CheXpert Plus dataset’s license, we can only release the corresponding data index in our benchmark files. 
+The source data files should be downloaded directly from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1) -->
+
+
+### Step 2:
+
+- Download the TemMed-Bench data files from [**🤗 Dataset**](https://huggingface.co/datasets/uclanlp/TemMed-Bench)
+
+- Save the files to the following path:
+
+  ```
+  TemMed-Bench/
+  ├── Get_Data/
+      ├── TestSet_ImagePairSelection.json
+      ├── TestSet_SelectedVQA_2000.json
+      ├── TestSet_VQA_ReportGeneration.json
+      └── TrainSet_KnowledgeCorpus.json
+  ```
+
+
+### Step 3:
+
+
+- Run ```Get_Report_TestSet.ipynb``` and ```Get_Report_TrainSet.ipynb``` to get the corresponding reports for each sample in TemMed-Bench.
+
+- The final files and directory structure are as follows:
+  
+  ```
+  TemMed-Bench/
+  ├── Get_Data/
+      ├── TestSet_ImagePairSelection.json
+      ├── TestSet_SelectedVQA_2000.json
+      ├── TestSet_VQA_ReportGeneration_Final.json
+      └── TrainSet_KnowledgeCorpus_Final.json
+  ```
+
+  - ```TestSet_VQA_ReportGeneration_Final.json```: Data for the Report Generation and VQA tasks.
+  - ```TestSet_SelectedVQA_2000.json```: A random subset of 2,000 VQA samples for evaluation.
+  - ```TestSet_ImagePairSelection.json```: Data for the Image-Pair Selection task.
+  - ```TrainSet_KnowledgeCorpus_Final.json```: The data corpus for retrieval or training.
 
 ## Evaluation 
 
