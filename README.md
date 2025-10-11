@@ -7,7 +7,7 @@
 ## News
 
 
-* 🔥 [2024-10-11] Code to be uploaded.
+* 🔥 [2024-10-11] Code for loading TemMed-Bench is released. Code for evaluation coming soon.
 
 
 ## Intro
@@ -116,4 +116,14 @@ The source data files should be downloaded directly from the [Stanford AIMI data
 
 ## Citation
 
-- Coming Soon
+```
+@misc{zhang2025temmedbenchevaluatingtemporalmedical,
+      title={TemMed-Bench: Evaluating Temporal Medical Image Reasoning in Vision-Language Models}, 
+      author={Junyi Zhang and Jia-Chen Gu and Wenbo Hu and Yu Zhou and Robinson Piramuthu and Nanyun Peng},
+      year={2025},
+      eprint={2509.25143},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2509.25143}, 
+}
+```
