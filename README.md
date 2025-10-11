@@ -4,7 +4,10 @@
 [**🌐 Homepage**](https://temmedbench.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/uclanlp/TemMed-Bench) | [**📖 Paper**](https://arxiv.org/abs/2509.25143)
 
 
+## News
 
+
+* 🔥 [2024-10-11] Code to be uploaded.
 
 
 ## Intro
