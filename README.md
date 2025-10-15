@@ -7,7 +7,7 @@
 ## News
 
 
-* 🔥 [2024-10-11] Code for loading TemMed-Bench is released. Code for evaluation coming soon.
+* 🔥 Code for loading TemMed-Bench is released. Code for evaluation coming soon.
 
 
 ## Intro
