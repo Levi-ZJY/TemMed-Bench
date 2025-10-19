@@ -6,8 +6,8 @@
 
 ## News
 
-
-* 🔥 Code for loading TemMed-Bench is released. Code for evaluation coming soon.
+* 🔥 Evaluation template code is released.
+* 🔥 Code for loading TemMed-Bench is released.
 
 
 ## Intro
@@ -106,7 +106,15 @@ The source data files should be downloaded directly from the [Stanford AIMI data
 
 ## Evaluation 
 
-- Coming Soon
+- The evaluation templates are in the ```TemMed-Bench/Eval``` folder. You can evaluate other models by following the evaluation procedure provided in the code.
+
+- Run the corresponding Python script and ensure the data file path is set correctly. For example:
+
+  ```
+  python VQA_GPT_RAG_imgReport.py
+  ```
+
+
 
 
 ## Contact

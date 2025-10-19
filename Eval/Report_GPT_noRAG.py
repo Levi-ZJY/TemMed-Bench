@@ -1,0 +1,98 @@
+import json
+import os
+
+with open("./TestSet_VQA_ReportGeneration_Final.json", 'r', encoding='utf-8') as f:
+    historical_data = json.load(f)
+
+print(len(historical_data))
+
+
+
+
+
+
+from tqdm import tqdm
+import base64
+from openai import OpenAI
+
+
+
+# OpenAI API Key
+client = OpenAI(api_key="Your_api_key")
+
+
+
+
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
+
+
+
+
+
+answers_file = "./Report_GPT_Answer_noRAG.jsonl"
+os.makedirs(os.path.dirname(answers_file), exist_ok=True)
+ans_file = open(answers_file, "w")
+
+
+
+
+
+for i in tqdm(range(len(historical_data))):
+
+
+    img1 = historical_data[i]["image_path"].replace('jpg', 'png')
+    image_path = f"./CheXpertPlus/PNG/{img1}"
+    base64_image = encode_image(image_path)
+
+
+    img2 = historical_data[i]["historical_image_path"].replace('jpg', 'png')
+    his_image_path = f"./CheXpertPlus/PNG/{img2}"
+    his_base64_image = encode_image(his_image_path)
+
+
+
+    # --------------------------------------------------------------------------------
+
+
+
+    Text1 = f"\nYou are a professional radiologist. You are provided with two X-ray images from the same patient. The first image is from the last visit, and the second image is from the current visit. Please generate a report for the current visit image. You should consider the last visit image to analyze the changes in the patient's condition in your report. You only need to generate the Impression section in the report. Please only include the content of the report in your response."
+
+    messages = [
+        {
+            "role": "user",
+            "content": [
+
+                {"type": "text", "text": "\nLast visit image: ",},
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{his_base64_image}"},},
+                {"type": "text", "text": "\nCurrent visit image: ",},
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"},},
+                {"type": "text", "text": Text1,},
+            ],
+        }
+    ]
+
+
+
+    response = client.chat.completions.create(
+        model="gpt-4o-2024-11-20",
+        messages=messages,
+    )
+
+
+    Answer = {"id": i, "answer_report": response.choices[0].message.content, "label_report": historical_data[i]["condition_changes_report"]}
+    
+
+    ans_file.write(json.dumps(Answer) + "\n")
+
+    ans_file.flush()
+
+
+ans_file.close()
+
+
+
+
+
+
