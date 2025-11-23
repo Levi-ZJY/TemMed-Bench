@@ -4,13 +4,13 @@
 [**🌐 Homepage**](https://temmedbench.github.io/) | [**🤗 Dataset**](https://huggingface.co/datasets/uclanlp/TemMed-Bench) | [**📖 Paper**](https://arxiv.org/abs/2509.25143)
 
 
-## News
+## ✨ News
 
 * 🔥 Evaluation template code is released.
 * 🔥 Code for loading TemMed-Bench is released.
 
 
-## Intro
+## 🚀 Intro
 
 <img src="./misc/Teaser_Figure.png" width="750" />
 
@@ -22,7 +22,7 @@ TemMed-Bench features three primary highlights.
 
 
 
-## Benchmark Overview
+## 🧩 Benchmark Overview
 
 - **Examples of the three tasks in TemMed-Bench:**
 
@@ -49,9 +49,9 @@ TemMed-Bench features three primary highlights.
   - Experimental results demonstrate that augmenting input with both visual and textual information substantially boosts performance for most models compared to text-only augmentation. Notably, HealthGPT exhibits an accuracy improvement of over 10% in the VQA task when augmented with multi-modal retrieved information. These results confirm that multi-modal retrieval augmentation provides more relevant medical information by retrieving images with similar conditions, highlighting its potential for input augmentation in the medical domain.
  -->
 
-## Load Dataset
+## 📍 Load Dataset
 
-### Step 1:
+### ✅ Step 1:
 
 - Download the source data files from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1) (Due to the dataset's license agreement, the images and reports from the CheXpert Plus dataset cannot be redistributed.)
 
@@ -67,7 +67,7 @@ TemMed-Bench features three primary highlights.
 The source data files should be downloaded directly from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1) -->
 
 
-### Step 2:
+### ✅ Step 2:
 
 - Download the TemMed-Bench data files from [**🤗 Dataset**](https://huggingface.co/datasets/uclanlp/TemMed-Bench)
 
@@ -83,7 +83,7 @@ The source data files should be downloaded directly from the [Stanford AIMI data
   ```
 
 
-### Step 3:
+### ✅ Step 3:
 
 
 - Run ```Get_Report_TestSet.ipynb``` and ```Get_Report_TrainSet.ipynb``` to get the corresponding reports for each sample in TemMed-Bench.
@@ -104,7 +104,7 @@ The source data files should be downloaded directly from the [Stanford AIMI data
   - ```TestSet_ImagePairSelection.json```: Data for the Image-Pair Selection task.
   - ```TrainSet_KnowledgeCorpus_Final.json```: The data corpus for retrieval or training.
 
-## Evaluation 
+## 🔬 Evaluation 
 
 - The evaluation templates are in the ```TemMed-Bench/Eval``` folder. You can evaluate other models by following the evaluation procedure provided in the code.
 
@@ -117,7 +117,7 @@ The source data files should be downloaded directly from the [Stanford AIMI data
 
 
 
-## Contact
+## 📧 Contact
 
 * Junyi Zhang: JunyiZhang2002@g.ucla.edu
 
