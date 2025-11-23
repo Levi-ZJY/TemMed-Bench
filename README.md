@@ -51,7 +51,7 @@ TemMed-Bench features three primary highlights.
 
 ## 📍 Load Dataset
 
-### Step 1:
+### ✅ Step 1:
 
 - Download the source data files from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1) (Due to the dataset's license agreement, the images and reports from the CheXpert Plus dataset cannot be redistributed.)
 
@@ -67,7 +67,7 @@ TemMed-Bench features three primary highlights.
 The source data files should be downloaded directly from the [Stanford AIMI dataset page](https://stanfordaimi.azurewebsites.net/datasets/5158c524-d3ab-4e02-96e9-6ee9efc110a1) -->
 
 
-### Step 2:
+### ✅ Step 2:
 
 - Download the TemMed-Bench data files from [**🤗 Dataset**](https://huggingface.co/datasets/uclanlp/TemMed-Bench)
 
@@ -83,7 +83,7 @@ The source data files should be downloaded directly from the [Stanford AIMI data
   ```
 
 
-### Step 3:
+### ✅ Step 3:
 
 
 - Run ```Get_Report_TestSet.ipynb``` and ```Get_Report_TrainSet.ipynb``` to get the corresponding reports for each sample in TemMed-Bench.
